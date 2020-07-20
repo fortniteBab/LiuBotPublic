@@ -1,0 +1,8 @@
+@commands.dm_only()  # (Optional) Just saying it only accepts DM's - Also can be @commands.party_only() or blank
+@client.command()
+async def commandname(ctx):
+  await client.party.me.set_outfit(
+    asset='CID_Skin_Cid_You_Want_Here'
+  )
+
+  await ctx.send('Skin set to: Skin')
